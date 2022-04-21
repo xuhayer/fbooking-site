@@ -12,3 +12,9 @@
   left:50%;
   transform:translate(-50%,-50%);
 }
+
+#flight-container{
+  text-align:center;
+  position:relative;
+  transform:translate(-50%,-50%);
+}
