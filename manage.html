@@ -10,7 +10,21 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- Javascript -->
-    
+    <script>
+      var n = 0;
+      function changeImage(y){
+        alert("Cell index is: " + x.cellIndex);
+        var image = document.getElementById("testimage");
+        var images = ["images/redtick.png","images/empty.png"]
+        image.src=images[n];
+        if(n<1){
+          n++;
+        }
+        else{
+          n=0;
+        }
+      }
+    </script>
     <title>Manage Flights</title>
   </head>
   <body>
@@ -47,7 +61,7 @@
     <table>
       <tr><!-- Row 1 -->
         <td>
-          <img src="images/empty.png">
+          <img src="images/empty.png" id="testimage" onClick="changeImage(this)">
         </td>
         <td>
           <img src="images/empty.png">
