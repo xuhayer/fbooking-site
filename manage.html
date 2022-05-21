@@ -13,10 +13,10 @@
     <script>
       var n = 0;
       function changeImage(y){
-        //var image = y.getElementsByTagName("img");
+        alert("Cell index is: " + x.cellIndex);
+        var image = document.getElementById("testimage");
         var images = ["images/redtick.png","images/empty.png"]
-        y.innerHTML="<img src='images/empty.png'>";
-        alert("Cell index is: " + y.cellIndex+y);
+        image.src=images[n];
         if(n<1){
           n++;
         }
@@ -60,18 +60,13 @@
     <h1 class="display-1 text-center">Choose Your Seat</h1>
     <table>
       <tr><!-- Row 1 -->
-        <td onClick="changeImage(this)">
-          <img src="images/empty.png">
-        </td>
-        <td onClick="changeImage(this)">
-          <img src="images/empty.png">
+        <td>
+          <img src="images/empty.png" id="testimage" onClick="changeImage(this)">
         </td>
         <td>
           <img src="images/empty.png">
         </td>
-      </tr>
-      <tr><!-- Row 2 -->
-        <td onClick="changeImage(this)">
+        <td>
           <img src="images/empty.png">
         </td>
       </tr>
