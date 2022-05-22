@@ -31,15 +31,23 @@ function updateSelectedCount() {
 
   count.innerText = selectedSeatsCount;
   total.innerText = selectedSeatsCount * ticketPrice;
+  localStorage.setItem('total',selectedSeatsCount * ticketPrice);
 }
-function submitSeats(){
+function submitSeats(int){
+
   if (total.innerText==0){
     alert("Please select a seat to continue");
   }
   else{
+    const info={
+      seats:count.innerText,
+      price:total.innerText
+    }
     window.location.href="food.html";
   }
 }
+
+
 // get data from localstorage and populate ui
 function populateUI() {
   const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));

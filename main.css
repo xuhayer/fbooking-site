@@ -50,6 +50,11 @@
   -webkit-filter: grayscale(50%);
   transform: scale(1.1);
 }
+
+.selImg{
+  -webkit-filter: grayscale(100%);
+
+}
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
