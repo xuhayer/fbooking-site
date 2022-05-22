@@ -28,3 +28,6 @@ function populatescreen(){
   seats.innerText=sseats;
   items.innerText =stuff;
 }
+function cont(){
+  window.location.href = "personaldetails.html";
+}
