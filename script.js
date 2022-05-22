@@ -32,7 +32,14 @@ function updateSelectedCount() {
   count.innerText = selectedSeatsCount;
   total.innerText = selectedSeatsCount * ticketPrice;
 }
-
+function submitSeats(){
+  if (total.innerText==0){
+    alert("Please select a seat to continue");
+  }
+  else{
+    window.location.href="food.html";
+  }
+}
 // get data from localstorage and populate ui
 function populateUI() {
   const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'));

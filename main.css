@@ -20,7 +20,36 @@
   position:relative;
   transform:translateY(20%);
 }
-
+#img1:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#img2:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#img3:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#f1:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#f2:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
+#f3:hover{
+  cursor: default;
+  -webkit-filter: grayscale(50%);
+  transform: scale(1.1);
+}
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
