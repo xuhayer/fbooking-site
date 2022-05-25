@@ -55,17 +55,19 @@
   -webkit-filter: grayscale(100%);
 
 }
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
-
-.flight-container {
-  margin: 20px 0;
+.brief {
+    text-align: center;
+    background-color: #f8f9fa;
 }
 
+.flight-container {
+  margin: 20px;
+}
 
 
 .flight-container select {
@@ -155,7 +157,7 @@
 
 p.text {
   position: absolute;
-  transform: translate(330%,-100%);
+  right: 200px;
 }
 
 p.text span {

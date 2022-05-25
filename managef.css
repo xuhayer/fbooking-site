@@ -3,3 +3,14 @@
 #main-content{
   align-items: center;
 }
+
+
+#price {
+    font-size: 50px;
+}
+
+
+.brief {
+    text-align: center;
+    background-color: #f8f9fa;
+}
